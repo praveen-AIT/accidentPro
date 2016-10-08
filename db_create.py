@@ -11,6 +11,7 @@ def add_post():
 	print("working")
 	db.session.add(Blogpost("AJAY","AFMC", 15))
 	db.session.commit()
+	print("DATA ADDED")
 
 
 def get_input(name, hospital_name, hospital_dist):

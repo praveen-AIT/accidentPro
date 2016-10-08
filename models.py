@@ -3,6 +3,7 @@ from app import db
 class Blogpost(db.Model):
 
 	__tablename__ = "accidents"
+	__table_args__ = {'extend_existing': True}
 
 	serial = db.Column(db.Integer, primary_key=True)
 	victim = db.Column(db.String)
