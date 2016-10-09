@@ -9,7 +9,7 @@ db.create_all()
 # Adding data
 def add_post():
 	print("working")
-	db.session.add(Blogpost("AJAY","AFMC", 15))
+	db.session.add(Blogpost("18.5248 73.5254","AFMC", 18.524, 73.5847))
 	db.session.commit()
 	print("DATA ADDED")
 

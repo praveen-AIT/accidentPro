@@ -12,41 +12,15 @@
   <table class="table">
     <thead>
       <tr>
-        <th>Hospital</th>
         <th>Accident location</th>
+        <th>Hospital</th>
         <th>Accept button</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>{{ hosp[0] }}</td>
-        <td>{{ vict[1] }}</td>
-        <td>
-            <input id="button" class="btn btn-info" type="submit" name="button" onclick="myFunction();" value="Accept"/>
-            <script>
-            function myFunction()
-            {
-                alert("Request Accepted");
-            };
-            </script>
-        </td>
-      </tr>
-      <tr>
-        <td>{{ hosp[1] }}</td>
-        <td>{{ vict[1] }}</td>
-        <td>
-            <input id="button" class="btn btn-info" type="submit" name="button" onclick="myFunction();" value="Accept"/>
-            <script>
-            function myFunction()
-            {
-                alert("Request Accepted");
-            };
-            </script>
-        </td>
-      </tr>
-      <tr>
-        <td>{{ hosp[-1] }}</td>
         <td>{{ vict[-1] }}</td>
+        <td>{{ hosp[-1] }}</td>
         <td>
             <input id="button" class="btn btn-info" type="submit" name="button" onclick="myFunction();" value="Accept"/>
             <script>
@@ -58,8 +32,8 @@
         </td>
       </tr>
       <tr>
-        <td>{{ hosp[1] }}</td>
-        <td>{{ vict[1] }}</td>
+        <td>{{ hosp[-2] }}</td>
+        <td>{{ vict[-2] }}</td>
         <td>
             <input id="button" class="btn btn-info" type="submit" name="button" onclick="myFunction();" value="Accept"/>
             <script>
@@ -71,8 +45,8 @@
         </td>
       </tr>
       <tr>
-        <td>{{ hosp[1] }}</td>
-        <td>{{ vict[1] }}</td>
+        <td>{{ hosp[-3] }}</td>
+        <td>{{ vict[-3] }}</td>
         <td>
             <input id="button" class="btn btn-info" type="submit" name="button" onclick="myFunction();" value="Accept"/>
             <script>
@@ -84,8 +58,34 @@
         </td>
       </tr>
       <tr>
-        <td>{{ hosp[1] }}</td>
-        <td>{{ vict[1] }}</td>
+        <td>{{ hosp[-4] }}</td>
+        <td>{{ vict[-4] }}</td>
+        <td>
+            <input id="button" class="btn btn-info" type="submit" name="button" onclick="myFunction();" value="Accept"/>
+            <script>
+            function myFunction()
+            {
+                alert("Request Accepted");
+            };
+            </script>
+        </td>
+      </tr>
+      <tr>
+        <td>{{ hosp[-5] }}</td>
+        <td>{{ vict[-5] }}</td>
+        <td>
+            <input id="button" class="btn btn-info" type="submit" name="button" onclick="myFunction();" value="Accept"/>
+            <script>
+            function myFunction()
+            {
+                alert("Request Accepted");
+            };
+            </script>
+        </td>
+      </tr>
+      <tr>
+        <td>{{ hosp[-6] }}</td>
+        <td>{{ vict[-6] }}</td>
         <td>
             <input id="button" class="btn btn-info" type="submit" name="button" onclick="myFunction();" value="Accept"/>
             <script>

@@ -58,16 +58,16 @@ def home():
 		dat_db1 = [row[0] for row in cur1.fetchall()]
 		#print(dat_db1[1])
 		for hosp in dat_db1:
-			print(hosp)
+			print hosp
 
 		cur1 = cur.execute("select victim from accidents")
 		dat_db2 = [row[0] for row in cur1.fetchall()]
-		for vict in dat_db1:
-			print(vict)
+		for vict in dat_db2:
+			print vict
 
 	db.create_all()
 	db.session.commit()
-	return render_template("home.html", vict=dat_db1, hosp=dat_db2)
+	return render_template("home.html", vict=dat_db2, hosp=dat_db1)
 
 if __name__ == '__main__':
 	app.run(debug=True)
